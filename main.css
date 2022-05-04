@@ -10,7 +10,7 @@ clases: en este archivo, para cada pag le asigne una clase conteniendo las 2 pri
  
 /*general*/
 
-.menu{
+.menu{ 
     position: fixed;
     top: 0px;
     list-style: none;
@@ -384,9 +384,7 @@ background-color: #000000;
 }
 
 .de .rappi{
-    animation: rebote-izquierda 0.7s;
-    position: relative;
-}
+    animation: rebote-izquierda 0.7s;}
 
 .de .pedidosya{
     animation: rebote-derecha 0.7s;
