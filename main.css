@@ -1,0 +1,673 @@
+/* paleta de colores
+
+#FF0000 Rojo dominante
+#c9afa9 Marron claro (fondos)
+#ffffff Blanco (secundario)
+#000000 negro (terciario, texto, algun que otro borde)
+
+clases: en este archivo, para cada pag le asigne una clase conteniendo las 2 primeras letras de la misma, menu=me, index=in...*/
+
+ 
+/*general*/
+
+.menu{
+    position: fixed;
+    top: 0px;
+    list-style: none;
+
+    background-image: linear-gradient(#ff0000, #cf0303);
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 100px;}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    display: block;
+    font-size: 15px;}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background-color:white ;
+}
+
+body{
+    background-color:#a9a9a9 ;
+}
+
+
+footer{
+    background-image: linear-gradient(#808080,#5f5f5f);
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.foot .app-spam img{
+    width: 50px;
+    height: 50px;
+}
+.foot .app-spam button{
+    width: 50px;
+    height: 25px;
+    font-size: 7px;
+}
+.app-spam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.redes i{
+    text-decoration: none;
+    font-size: 30px;
+    color: #000000;
+}
+
+.legal{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+h6{
+    font-size: 15px ;
+}
+
+p{
+    font-size: 10px;
+}
+
+
+/*-------------------------------------- index --------------------------------------*/
+
+.in header{
+    padding: 10px;
+    background-image: url(images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.in header h1{
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+.in header p{
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.in main{
+    margin: 10px;
+}
+
+.in h2{
+    margin: 20px;
+
+    background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+}
+
+.in h3{
+    margin: 10px;
+}
+
+.in .img-novedades{
+   width: 100px;
+   height: 100px;
+   margin: 5px;
+}
+
+.in .novedades-titulo{
+    background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+    margin: 20px 10px;
+    padding: 5px 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+
+    animation: rebote-abajo 0.7s;
+}
+
+.in .extra-promo{
+    animation: rebote-derecha 0.7s;
+}
+
+
+.in .novedades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+
+.in .encontrarnos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.in .texto-ubicaciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.in .texto-ubicaciones h3{
+    background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+}
+
+.lista-tel{
+    margin-right: 40px ;
+    margin-left: 20px;
+    font-size: 15px;
+    background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+}
+       
+.in iframe{
+    width: 300px;
+    height: 200px;
+    align-self: center;
+}
+
+/*-------------------------------------- menu --------------------------------------*/
+
+.me h1{    
+    padding: 10px;
+    margin: 10px;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.me p{
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.me{
+    margin: 60px 10px 30px;
+}
+
+.me table {
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+/* le da color a los inpares */
+.me tr:nth-child(even){
+    background-color: #e8e8e8;}
+
+.me thead{
+    height: 80px;
+    position: sticky;
+    top: 50px;
+
+    background-color: red;
+}
+
+
+/*--------------------------------------contacto--------------------------------------*/
+
+.contacto{
+background-color: #000000;
+}
+
+.co header{
+    background-image: linear-gradient(#464646, #000000);
+}
+
+.izq{
+    display: grid;
+}
+
+.co main{
+    margin: 50px 30px;
+    padding: 0 1.5em;
+}
+
+.co .izq{
+    background-image: linear-gradient(#464646, #2d2d2d);
+}
+.co .formulario{
+    display: grid;
+    grid-template-columns: 75%;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.co aside{
+    background-color: #000000; 
+}
+
+.co h1{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.co .izq p{
+    color: white;
+    text-align: center;
+}
+
+
+.co .dia,.mes{
+    width: 10px;
+}
+
+.co .year{
+    width: 20px;
+}
+
+
+.co form input, textarea {
+    padding: .6em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 2px solid red;
+}
+
+.co textarea{
+    padding: 0.8em 1em;
+}
+
+
+.co form .enviar{
+    text-align: center;
+    padding: 1em;
+    background-color: red;
+}
+
+
+.co .grid{
+    box-shadow: 0 0 20px 0 white;
+}
+
+.co .more-inf{
+    padding: 10px;
+    color: #ffffff;
+    background-color: #000000;
+    justify-items: left;
+}
+.co .more-inf li{
+    list-style: none;
+    font-size: 13px;
+}
+
+
+/*-------------------------------------- delivery --------------------------------------*/
+.de{
+    margin:100px 10px 100px;
+    background-color: white;
+}
+
+
+.de h1{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.de h3{
+    text-align: center;
+}
+
+.de .empresas-del{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.de main img{
+    margin: 10px;
+    border-radius: 15%;
+    width: 150px;
+    height: 100px;
+}
+
+.de .rappi{
+    animation: rebote-izquierda 0.7s;
+    position: relative;
+}
+
+.de .pedidosya{
+    animation: rebote-derecha 0.7s;
+}
+/*-------------------------------------- equipo --------------------------------------*/
+.eq{
+    margin:65px 20px 30px;
+    background-color: white;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eq img{
+    max-width: 80%;
+}
+.eq h1{
+    text-align: center;
+}
+
+.eq h2{
+    text-align: center;
+}
+
+.eq p{
+    text-align: center;
+}
+
+
+
+/* escritorio */
+@media screen and (min-width: 768px)
+{.menu li a{
+    padding: 15px;
+    font-size: 30px;}
+
+    footer{
+        padding: 20px 30px;
+    }
+    .foot .app-spam img{
+        width: 100px;
+        height: 100px;
+    }
+    .foot .app-spam button{
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .legal{
+        padding: 20px;
+        flex-direction: row;
+    }
+
+
+/*-------------------------------------- index --------------------------------------*/
+    .in header h1{
+        padding: 95px 0 0 0;
+    }
+    .in header p{
+        margin: 0 30px;
+        padding-bottom: 40px;
+    }
+
+    .in h3{
+        margin: 20px;
+    }
+
+    .in .img-novedades{
+        width: 200px;
+        height: 200px;   
+
+        margin-left: 50px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+     }
+
+     .in .novedades-titulo{
+        margin: 50px;
+        padding: 10px 20px;
+    }
+    .lista-tel{
+        font-size: 20px;
+    }
+
+    .in iframe{
+    width: 600px;
+    height: 450px}
+
+
+    .in .encontrarnos{
+        flex-direction: row;
+    }
+
+    .in .texto-ubicaciones{
+        margin: 50px;
+}
+
+.in .extra-promo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #2d2d2d;
+    margin: 50px 20px;
+    padding: 10px;
+}
+
+.in .promos .anuncio{
+    background-color: #464646;
+    text-align: center;
+}
+
+.in .promos img{
+    width: 100%;
+}
+.main-index{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+/*-------------------------------------- menu --------------------------------------*/
+
+.me{
+    margin: 100px;
+}
+
+.me h1{
+    padding: 20px;
+    margin: 20px ;
+}
+
+.me p{
+    padding: 20px;
+    margin: 20px
+}
+
+.me thead{
+    top: 90px;
+}
+
+/*-------------------------------------- delivery --------------------------------------*/
+.de{
+    margin:100px 50px 100px;
+}
+
+.de main img{
+    margin: 50px 10px 50px ;
+    width: 300px;
+    height: 200px;}
+
+
+ /*-------------------------------------- equipo --------------------------------------*/
+ .eq{
+     margin:100px 30px 100px;
+}
+
+
+
+/*-------------------------------------- contacto --------------------------------------*/
+.co main{
+    margin: 100px 50px;
+}
+.co .formulario{
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+}
+
+.co .dia,.mes{
+    width: 40px;
+}
+
+.co .year{
+    width: 60px;}
+
+.co textarea{
+    padding: 2em 1em;
+    }
+
+
+h1{
+    font-size: 50px;}
+h2{
+    font-size: 45px;}
+h3{
+    font-size: 40px;}
+h4{
+    font-size: 35px;}
+h5{
+    font-size: 30px;}
+h6{
+    font-size: 25px;}
+p{
+    font-size: 20px;}
+}
+
+
+/* use este para unos ajustes  extra */
+@media screen and (min-width: 1024px)
+{.co .grid{
+        display: grid;
+        grid-template-columns: 75% 25%;}
+    
+ .in .img-novedades{
+         width: 300px;
+        height: 300px;}   
+    
+}
+
+/* aca desapareci todo contenido excesivo para movil/tablet, dejando esa informacion solamente para dispositivos mas grandes. */
+
+@media screen and (max-width: 767px)
+{
+.extra-promo{
+        margin: 0;
+        padding: 0;
+        display: none;}
+
+.promos{
+        display: none;}
+}
+
+@media screen and (max-width: 1024px)
+{.extra-text{
+    display: none;}
+}
+
+
+@keyframes rebote-abajo {
+        0% {
+          transform: translateY(100vw);
+          opacity: 0;
+        }
+        
+        50% {
+          transform: translateY(-20px);
+          opacity: 0.5;
+        }
+        
+        70% {  
+          transform: translateY(10px);  
+          opacity: 1;  
+        }
+}
+
+@keyframes rebote-izquierda{
+ 
+    0% {
+      opacity: 0;
+      transform: translateX(-100vw);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translateX(30px);
+    }
+    
+    70% {
+      transform: translateX(-10px);   
+    }
+    
+  }
+
+  @keyframes rebote-derecha{
+ 
+    0% {
+      opacity: 0;
+      transform: translateX(100vw);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    
+    70% {
+      transform: translateX(10px);   
+    }
+    
+  }
+
+
