@@ -9,31 +9,12 @@ clases: en este archivo, para cada pag le asigne una clase conteniendo las 2 pri
 
  
 /*general*/
-
-.menu{ 
+nav{
+    background-color: red;
     position: fixed;
-    top: 0px;
-    list-style: none;
-
-    background-image: linear-gradient(#ff0000, #cf0303);
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 100px;}
-
-.menu li a{
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    display: block;
-    font-size: 15px;}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
+    z-index: 1;
 }
-.menu li a:hover{
-    background-color:white ;
-}
+
 
 body{
     background-color:#a9a9a9 ;
@@ -90,27 +71,27 @@ footer{
 
 
 h1{
-    font-size: 40px;
-}
-
-h2{
-    font-size: 35px;
-}
-
-h3{
     font-size: 30px;
 }
 
-h4{
+h2{
     font-size: 25px;
 }
 
-h5{
+h3{
     font-size: 20px;
 }
 
+h4{
+    font-size: 15px;
+}
+
+h5{
+    font-size: 13px;
+}
+
 h6{
-    font-size: 15px ;
+    font-size: 10px ;
 }
 
 p{
@@ -142,6 +123,21 @@ p{
 .in main{
     margin: 10px;
 }
+
+
+.container{
+    grid-gap: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .us-right{
+      background: url("https://dummyimage.com/150x200/000/fff");
+  }
+  
+  .us-left{
+      background: url("https://dummyimage.com/300x400/000/fff");
+  }
 
 .in h2{
     margin: 20px;
@@ -263,6 +259,7 @@ background-color: #000000;
 
 .co header{
     background-image: linear-gradient(#464646, #000000);
+    padding: 20px;
 }
 
 .izq{
@@ -402,19 +399,24 @@ background-color: #000000;
 }
 
 .eq img{
-    max-width: 80%;
+    padding: 20px;
 }
 .eq h1{
     text-align: center;
 }
 
-.eq h2{
-    text-align: center;
+.eq .container img{
+    justify-content: center;
+    width: 250px;
+}
+.eq .container button{
+    justify-content: center;
 }
 
-.eq p{
-    text-align: center;
-}
+.eq h3, p{
+    text-align: center;}
+
+
 
 
 
@@ -544,12 +546,19 @@ background-color: #000000;
      margin:100px 30px 100px;
 }
 
-
+.eq .container img{
+    width: 400px
+};
 
 /*-------------------------------------- contacto --------------------------------------*/
+.co header{
+    padding: 50px;
+}
+
 .co main{
     margin: 100px 50px;
 }
+
 .co .formulario{
     grid-template-columns: 50% 50%;
     grid-gap: 20px;

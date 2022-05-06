@@ -6,23 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PizzaPlaneta | Pedido</title>
 
- 
+     <!-- link para bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- esta es para los logos -->
     <script src="https://kit.fontawesome.com/89a8faeaea.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../main.css">
 </head> 
-<body> 
-    <nav class="menu">
-        <ul>
-            <li><a href="contacto.html">contacto</a></li>
-            <li><a href="menu.html">menu</a></li>
-            <li><a href="../index.html">inicio</a></li>
-            <li><a href="delivery.html">delivery</a></li>
-            <li><a href="equipo.html">equipo</a></li>
-        </ul>
-    </nav> 
+    <nav class="navbar navbar-expand-lg navbar-light min-vw-100 position-fixed" style="top: 0px">
+        <div class="container-fluid">
+            <!-- menu hamburgesa para < tablets -->
+          <a class="navbar-brand" href="delivery.html">delivery</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="menu.html">menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="equipo.html">equipo</a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </nav>
 
 <div class="de">
 
@@ -87,5 +104,8 @@
             </div>
     </div> 
     </footer>
+
+    <!-- para el js y css del bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
