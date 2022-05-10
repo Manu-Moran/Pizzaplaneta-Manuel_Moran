@@ -15,9 +15,16 @@ nav{
     z-index: 1;
 }
 
+nav li{
+    cursor: pointer;;
+}
 
+/* fondo robado de https://www.svgbackgrounds.com/ */
 body{
-    background-color:#a9a9a9 ;
+    background-color: #A9A9A9;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23A9A9A9' cx='50' cy='0' r='50'/%3E%3Cg fill='%23a1a1a1' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23989898' cx='50' cy='100' r='50'/%3E%3Cg fill='%23909090' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23878787' cx='50' cy='200' r='50'/%3E%3Cg fill='%237f7f7f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23767676' cx='50' cy='300' r='50'/%3E%3Cg fill='%236e6e6e' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23656565' cx='50' cy='400' r='50'/%3E%3Cg fill='%235d5d5d' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23555555' cx='50' cy='500' r='50'/%3E%3Cg fill='%234c4c4c' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23444444' cx='50' cy='600' r='50'/%3E%3Cg fill='%233b3b3b' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23333333' cx='50' cy='700' r='50'/%3E%3Cg fill='%232a2a2a' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23222222' cx='50' cy='800' r='50'/%3E%3Cg fill='%23191919' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23111111' cx='50' cy='900' r='50'/%3E%3Cg fill='%23080808' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23000000' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: contain;
 }
 
 
@@ -58,7 +65,7 @@ footer{
 
 .redes i{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: #000000;
 }
 
@@ -98,48 +105,154 @@ p{
     font-size: 10px;
 }
 
-
+.negrita{
+    font-weight: bolder;
+}
 /*-------------------------------------- index --------------------------------------*/
 
 .in header{
     padding: 10px;
+    margin-bottom: 50px;
+   
     background-image: url(images/fondo.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+
+    box-shadow: 0px 2px 25px 25px rgba(0,0,0,1);
 }
 
 .in header h1{
-    padding-top: 30px;
+    padding-top: 50px;
     color: white;
     text-align: center;
+    text-shadow: 0px 0px 6px rgb(207, 206, 206)
 }
 
 .in header p{
     padding-bottom: 20px;
     color: white;
     text-align: center;
+    text-shadow: 0px 0px 6px rgb(207, 206, 206)
 }
 
 .in main{
-    margin: 10px;
+    padding: 10px; 
 }
 
 
-.container{
+.in .container{
     grid-gap: 20px;
     text-align: center;
-    color: white;
+    color: #ffffff;
   }
   
-  .us-right{
-      background: url("https://dummyimage.com/150x200/000/fff");
-  }
-  
-  .us-left{
-      background: url("https://dummyimage.com/300x400/000/fff");
+
+.in section .container{
+    gap: 20px;
+}
+
+  .us-right h6{
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
   }
 
+  .us-right p{
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  }
+
+  .us-right .pedi-retira{
+    background: url(images/foto-pedi_y_retira.jpg);
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 15px;
+
+    min-width: 20vh;
+    min-height: 15vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 5px;
+  }
+  
+  .us-right .cuidados{
+    background: url(images/foto-cuidados.jpg);
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 15px;
+
+    min-width: 20vh;
+    min-height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 5px;
+  }
+
+  .us-right .ingredientes{
+    background: url(images/foto-ingredientes.jpg);
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 15px;
+
+    min-width: 20vh;
+    min-height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 5px;
+  }
+
+  .us-right .fiesta{
+    background: url(images/foto-fiesta.jpg);
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 15px;
+
+    min-width: 20vh;
+    min-height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 5px;
+  }
+  
+  
+  .us-left{
+    background: url(images/foto-app.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 25px;
+
+    min-width: 40vh;
+    min-height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .us-left h5{
+    text-shadow: 0px 0px 6px rgba(255,0,0,1);
+  }
+
+  .us-left p{
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  }
+
+
 .in h2{
+    padding: 5px;
     margin: 20px;
 
     background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
@@ -147,7 +260,8 @@ p{
 }
 
 .in h3{
-    margin: 10px;
+    padding: 5px;
+    margin: 20px;
 }
 
 .in .img-novedades{
@@ -195,11 +309,13 @@ p{
 }
 
 .lista-tel{
+    padding: 5px;
     margin-right: 40px ;
     margin-left: 20px;
     font-size: 15px;
     background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
     box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+    list-style: none;
 }
        
 .in iframe{
@@ -231,11 +347,13 @@ p{
 }
 
 .me table {
+    padding: 5px;
     width: 100%;
     height: 1000px;
     background-color: white;
     text-align: left;
     border-collapse: collapse;
+    font-size: 12px;
 }
 
 /* le da color a los inpares */
@@ -243,10 +361,11 @@ p{
     background-color: #e8e8e8;}
 
 .me thead{
-    height: 80px;
+    height: 50px;
     position: sticky;
     top: 50px;
-
+    font-size: 15px;
+    
     background-color: red;
 }
 
@@ -296,6 +415,8 @@ background-color: #000000;
     padding-top: 50px;
     text-align: center;
     color: white;
+
+    text-shadow: 0px 0px 6px rgb(201, 201, 201)
 }
 
 .co .izq p{
@@ -303,8 +424,12 @@ background-color: #000000;
     text-align: center;
 }
 
+.co header p{
+    text-align: center;
+}
 
-.co .dia,.mes{
+
+.co .dia,.co .mes{
     width: 10px;
 }
 
@@ -313,7 +438,7 @@ background-color: #000000;
 }
 
 
-.co form input, textarea {
+.co form input, .co textarea {
     padding: .6em;
     border: none;
     background: none;
@@ -344,7 +469,7 @@ background-color: #000000;
     background-color: #000000;
     justify-items: left;
 }
-.co .more-inf li{
+.co .more-inf li, .co .more-inf ul{
     list-style: none;
     font-size: 13px;
 }
@@ -401,6 +526,7 @@ background-color: #000000;
 .eq img{
     padding: 20px;
 }
+
 .eq h1{
     text-align: center;
 }
@@ -409,22 +535,24 @@ background-color: #000000;
     justify-content: center;
     width: 250px;
 }
-.eq .container button{
-    justify-content: center;
-}
 
-.eq h3, p{
-    text-align: center;}
 
+.eq h3, .eq p{
+    text-align: center;
+    color: #000000;}
 
 
 
 
 /* escritorio */
 @media screen and (min-width: 768px)
-{.menu li a{
-    padding: 15px;
-    font-size: 30px;}
+{   nav .navbar-brand{
+    font-size: 1.75em;
+    font-weight: 500 ;}
+
+    nav .nav-item{
+        font-size: 1.25em ;
+    }
 
     footer{
         padding: 20px 30px;
@@ -444,25 +572,33 @@ background-color: #000000;
         flex-direction: row;
     }
 
+    .foot .redes i{
+        font-size: 30px;
+    }
 
 /*-------------------------------------- index --------------------------------------*/
     .in header h1{
         padding: 95px 0 0 0;
+
     }
     .in header p{
         margin: 0 30px;
         padding-bottom: 40px;
     }
 
+    .in h2{
+        padding-left: 15px;
+    }
     .in h3{
-        margin: 20px;
+        padding-left: 10px;
+        margin: 10px;
     }
 
     .in .img-novedades{
         width: 200px;
         height: 200px;   
 
-        margin-left: 50px;
+        margin-left: 10px;
         margin-right: 20px;
         margin-bottom: 30px;
      }
@@ -472,6 +608,7 @@ background-color: #000000;
         padding: 10px 20px;
     }
     .lista-tel{
+        padding: 5px;
         font-size: 20px;
     }
 
@@ -493,6 +630,7 @@ background-color: #000000;
     flex-direction: column;
     justify-content: center;
 
+
     background-color: #2d2d2d;
     margin: 50px 20px;
     padding: 10px;
@@ -501,6 +639,10 @@ background-color: #000000;
 .in .promos .anuncio{
     background-color: #464646;
     text-align: center;
+}
+
+.in .promos .anuncio p{
+    font-size: 15px;
 }
 
 .in .promos img{
@@ -526,8 +668,14 @@ background-color: #000000;
     margin: 20px
 }
 
+
 .me thead{
-    top: 90px;
+    height: 80px;
+    top: 50px;
+    font-size: 20px;
+}
+.me table {
+    font-size: 20px;
 }
 
 /*-------------------------------------- delivery --------------------------------------*/
@@ -564,7 +712,7 @@ background-color: #000000;
     grid-gap: 20px;
 }
 
-.co .dia,.mes{
+.co .dia,.co .mes{
     width: 40px;
 }
 
@@ -575,7 +723,10 @@ background-color: #000000;
     padding: 2em 1em;
     }
 
-
+.co .more-inf li, .co .more-inf ul{
+    list-style: none;
+    font-size: 15px;}
+    
 h1{
     font-size: 50px;}
 h2{
@@ -601,8 +752,8 @@ p{
     
  .in .img-novedades{
          width: 300px;
-        height: 300px;}   
-    
+         height: 300px;   
+         margin-left: 60px;}
 }
 
 /* aca desapareci todo contenido excesivo para movil/tablet, dejando esa informacion solamente para dispositivos mas grandes. */
@@ -618,7 +769,7 @@ p{
         display: none;}
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1023px)
 {.extra-text{
     display: none;}
 }
@@ -676,5 +827,4 @@ p{
     }
     
   }
-
 
