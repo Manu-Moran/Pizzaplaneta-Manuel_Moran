@@ -1,0 +1,61 @@
+footer{
+    background-image: linear-gradient(#808080,#5f5f5f);
+    padding: 5px 10px;
+    margin: 0;
+
+    .app-spam{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        margin: 10px 10px 20px;
+
+        button{
+            width: 50px;
+            height: 25px;
+            font-size: 7px;
+        }
+        
+        img{
+            width: 50px;
+            height: 50px;
+        } 
+        .text-app{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }  
+    }
+
+    .redes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        i{
+            text-decoration: none;
+            font-size: 20px;
+            color: #000000;
+        }
+    }
+
+    .legal{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+.legal{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

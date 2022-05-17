@@ -1,0 +1,156 @@
+.in{
+    
+    header{
+    padding: 10px;
+    margin-bottom: 50px;
+   
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    box-shadow: 0px 2px 25px 25px rgba(0,0,0,1);
+        
+        h1{
+        padding-top: 50px;
+        color: white;
+        text-align: center;
+        text-shadow: 0px 0px 6px rgb(207, 206, 206)
+        }
+        
+        p{
+        padding-bottom: 20px;
+        color: white;
+        text-align: center;
+        text-shadow: 0px 0px 6px rgb(207, 206, 206)
+        }
+    }
+
+    .container{
+        grid-gap: 20px;
+        text-align: center;
+        color: #ffffff;
+
+        .us-right{ 
+            h6{text-shadow: 0px 0px 8px rgb(0, 0, 0);}
+
+            p{text-shadow: 0px 0px 7px rgb(0, 0, 0);} 
+            
+
+            .pedi-retira{background: url(../images/foto-pedi_y_retira.jpg);}
+
+            .cuidados{background: url(../images/foto-cuidados.jpg);}
+
+            .ingredientes{background: url(../images/foto-ingredientes.jpg);}
+
+            .fiesta{background: url(../images/foto-fiesta.jpg);}
+
+            .pedi-retira,.cuidados,.ingredientes,.fiesta{
+                background-repeat: no-repeat;
+                background-size:cover;
+                border-radius: 15px;
+            
+                min-width: 20vh;
+                min-height: 15vh;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            
+                margin: 5px;
+            }
+        }
+
+        .us-left{
+            background: url(../images/foto-app.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            border-radius: 25px;
+        
+            min-width: 40vh;
+            min-height: 30vh;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h5{text-shadow: 0px 0px 8px rgba(255,0,0,1);}
+            
+            p{text-shadow: 0px 0px 7px rgb(0, 0, 0);}
+        }
+    }
+
+    main{
+        padding: 10px; 
+
+        .novedades{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+
+        h2{
+            padding: 5px;
+            margin: 20px;
+        
+            background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+            box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+        }
+
+        h3{
+            padding: 5px;
+            margin: 20px;
+        }
+
+        .img-novedades{
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+        
+        .novedades-titulo{
+            background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+            margin: 20px 10px;
+            padding: 5px 10px;
+            box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+        
+            animation: rebote-abajo 0.7s;
+        }
+
+        .extra-promo{
+            animation: rebote-derecha 0.7s;
+        }
+    }
+
+    .encontrarnos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .texto-ubicaciones{
+            display: flex;
+            flex-direction: column;
+
+            h3{
+                background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+                box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+            }
+
+            .lista-tel{
+                padding: 5px;
+                margin-right: 40px ;
+                margin-left: 20px;
+                font-size: 15px;
+                background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+                box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.25);
+                list-style: none;
+            }
+        }
+    }
+
+    iframe{
+        width: 300px;
+        height: 200px;
+        align-self: center;
+    }
+} 

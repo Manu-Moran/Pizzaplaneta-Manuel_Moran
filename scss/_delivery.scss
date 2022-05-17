@@ -1,0 +1,28 @@
+.de{
+    margin:100px 10px 100px;
+    background-color: white;
+
+    h1,h3{
+        text-align: center;
+        h1{padding-top: 20px;}
+    }
+    
+    .empresas-del{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        img{
+            margin: 10px;
+            border-radius: 15%;
+            width: 150px;
+            height: 100px;
+        }
+
+        .rappi{animation: rebote-izquierda 0.7s;}
+        
+        .pedidosya{animation: rebote-derecha 0.7s;}
+    }
+    
+}

@@ -1,0 +1,280 @@
+/* escritorio */
+@media screen and (min-width: 768px)
+{   
+    h1{font-size: 50px;}
+    h2{font-size: 45px;}
+    h3{font-size: 40px;}
+    h4{font-size: 35px;}
+    h5{font-size: 30px;}
+    h6{font-size: 25px;}
+    p{font-size: 20px;}
+
+
+    nav{
+    
+    .navbar-brand{
+        font-size: 1.75em;
+        font-weight: 500 ;}
+    
+    .nav-item{font-size: 1.25em ;}
+}
+
+/*----------------------------------------- footer -----------------------------------------*/
+footer{
+    padding: 20px 30px;
+    
+    .app-spam{
+
+        margin: 20px 20px 40px;
+
+        img{
+            width: 100px;
+            height: 100px;}
+                
+        button{
+            width: 100px;
+            height: 50px;
+            font-size: 15px;}} 
+    
+    .legal{
+        padding: 20px;
+        flex-direction: row;}
+    
+    .redes i{font-size: 30px;}
+    
+}
+
+
+/*----------------------------------------- index -----------------------------------------*/
+.in{
+    header{
+        h1{
+            padding: 95px 0 0 0;}
+
+        p{
+            margin: 0 30px;
+            padding-bottom: 40px;
+        }
+    } 
+
+    main{
+        h2{
+            padding-left: 15px;
+        }
+        h3{
+            padding-left: 10px;
+            margin: 10px;
+        }
+        .img-novedades{
+            width: 200px;
+            height: 200px;   
+        
+            margin-left: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+         .novedades-titulo{
+            margin: 50px;
+            padding: 10px 20px;
+        }
+        .lista-tel{
+            padding: 5px;
+            font-size: 20px;
+        }
+        iframe{
+            width: 600px;
+            height: 450px}
+        .encontrarnos{flex-direction: row;} 
+        .texto-ubicaciones{
+            margin: 50px;
+        } 
+        .extra-promo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+            background-color: #2d2d2d;
+            margin: 50px 20px;
+            padding: 10px;
+            }
+            
+        .promos{
+            .anuncio{
+            background-color: #464646;
+            text-align: center;
+
+            p{font-size: 15px;}
+                
+            img{
+                width: 100%;
+                }
+            }
+        }         
+    }
+
+    .main-index{
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+}
+
+
+/*----------------------------------------- menu -----------------------------------------*/
+.me{
+    margin: 100px;
+
+    h1{
+        padding: 20px;
+        margin: 20px ;
+    }
+    
+    p{
+        padding: 20px;
+        margin: 20px
+    }
+
+    table {
+        font-size: 20px;
+
+        thead{
+            height: 80px;
+            top: 50px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+/*----------------------------------------- delivery -----------------------------------------*/
+.de{
+    margin:100px 50px 100px;
+
+    .empresas-del img{
+        margin: 50px 10px 50px ;
+        width: 300px;
+        height: 200px;}
+}
+
+ /*----------------------------------------- equipo -----------------------------------------*/
+.eq{
+     margin:100px 30px 100px;
+
+    .container img{
+    width: 400px
+    }
+}
+
+/*----------------------------------------- contacto -----------------------------------------*/
+.co{
+    header{
+        padding: 50px;
+    }
+
+    main{
+        margin: 100px 50px;
+
+        .formulario{
+            grid-template-columns: 50% 50%;
+            grid-gap: 20px;
+
+            .dia,.mes{width: 40px;}
+            .year{width: 60px;}
+            textarea{padding: 2em;}
+                
+            }
+        .more-inf{
+            li,ul{
+            list-style: none;
+            font-size: 15px;}
+            } 
+        }
+    }
+} 
+
+
+
+/* use este para unos ajustes  extra */
+@media screen and (min-width: 1024px)
+{.co .grid{
+        display: grid;
+        grid-template-columns: 75% 25%;}
+    
+ .in main .img-novedades{
+         width: 300px;
+         height: 300px;   
+         margin-left: 60px;}
+}
+
+/* aca desapareci todo contenido excesivo para movil/tablet, dejando esa informacion solamente para dispositivos mas grandes. */
+
+@media screen and (max-width: 767px)
+{
+.extra-promo{
+        margin: 0;
+        padding: 0;
+        display: none;}
+
+.promos{
+        display: none;}
+}
+
+@media screen and (max-width: 1023px)
+{.extra-text{
+    display: none;}
+}
+
+/*-------------------------------------- efectos --------------------------------------*/
+
+@keyframes rebote-abajo {
+        0% {
+          transform: translateY(100vw);
+          opacity: 0;
+        }
+        
+        50% {
+          transform: translateY(-20px);
+          opacity: 0.5;
+        }
+        
+        70% {  
+          transform: translateY(10px);  
+          opacity: 1;  
+        }
+}
+
+@keyframes rebote-izquierda{
+ 
+    0% {
+      opacity: 0;
+      transform: translateX(-100vw);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translateX(30px);
+    }
+    
+    70% {
+      transform: translateX(-10px);   
+    }
+    
+  }
+
+@keyframes rebote-derecha{
+ 
+    0% {
+      opacity: 0;
+      transform: translateX(100vw);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    
+    70% {
+      transform: translateX(10px);   
+    }
+    
+  }
