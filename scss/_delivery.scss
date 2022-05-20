@@ -15,9 +15,7 @@
 
         img{
             margin: 10px;
-            border-radius: 15%;
-            width: 150px;
-            height: 100px;
+            @include size-img(150px, 175px, 15%)
         }
 
         .rappi{animation: rebote-izquierda 0.7s;}

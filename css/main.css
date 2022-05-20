@@ -24,8 +24,20 @@ h5 {
 h6 {
   font-size: 10px; }
 
-p {
+p, .co header h1 {
   font-size: 10px; }
+
+.sombreado-negro {
+  text-shadow: 0px 0px 8px black; }
+
+.sombreado-gris {
+  text-shadow: 0px 0px 8px #7c7c7c; }
+
+.sombreado-blanco {
+  text-shadow: 0px 0px 8px white; }
+
+.sombreado-rojo {
+  text-shadow: 0px 0px 8px red; }
 
 .negrita {
   font-weight: bolder; }
@@ -89,22 +101,16 @@ footer {
   .in header h1 {
     padding-top: 50px;
     color: white;
-    text-align: center;
-    text-shadow: 0px 0px 6px #cfcece; }
-  .in header p {
+    text-align: center; }
+  .in header p, .in .co header h1, .co .in header h1 {
     padding-bottom: 20px;
     color: white;
-    text-align: center;
-    text-shadow: 0px 0px 6px #cfcece; }
+    text-align: center; }
 
 .in .container {
   grid-gap: 20px;
   text-align: center;
   color: #ffffff; }
-  .in .container .us-right h6 {
-    text-shadow: 0px 0px 8px black; }
-  .in .container .us-right p {
-    text-shadow: 0px 0px 7px black; }
   .in .container .us-right .pedi-retira {
     background: url(../images/foto-pedi_y_retira.jpg); }
   .in .container .us-right .cuidados {
@@ -133,10 +139,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
-    .in .container .us-left h5 {
-      text-shadow: 0px 0px 8px red; }
-    .in .container .us-left p {
-      text-shadow: 0px 0px 7px black; }
 
 .in main {
   padding: 10px; }
@@ -154,9 +156,10 @@ footer {
     padding: 5px;
     margin: 20px; }
   .in main .img-novedades {
-    width: 100px;
+    margin: 5px;
     height: 100px;
-    margin: 5px; }
+    width: 100px;
+    border-radius: 0%; }
   .in main .novedades-titulo {
     background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
     margin: 20px 10px;
@@ -197,7 +200,7 @@ footer {
     margin: 10px;
     background-color: white;
     text-align: center; }
-  .me p {
+  .me p, .me .co header h1, .co header .me h1 {
     padding: 10px;
     margin: 15px;
     text-align: center;
@@ -225,13 +228,11 @@ footer {
 .co header {
   background-image: linear-gradient(#464646, #000000);
   padding: 20px; }
-  .co header p {
-    text-align: center; }
-  .co header h1 {
-    padding-top: 50px;
+  .co header p, .co header h1 {
     text-align: center;
-    color: white;
-    text-shadow: 0px 0px 6px #c9c9c9; }
+    color: #ffffff; }
+  .co header h1 {
+    padding-top: 50px; }
 
 .co main {
   margin: 50px 30px;
@@ -247,7 +248,7 @@ footer {
   .co main .izq {
     background-image: linear-gradient(#464646, #2d2d2d);
     display: grid; }
-    .co main .izq p {
+    .co main .izq p, .co main .izq header h1, .co header main .izq h1 {
       color: white;
       text-align: center; }
     .co main .izq .nombre {
@@ -297,9 +298,9 @@ footer {
     flex-wrap: wrap; }
     .de .empresas-del img {
       margin: 10px;
-      border-radius: 15%;
-      width: 150px;
-      height: 100px; }
+      height: 150px;
+      width: 175px;
+      border-radius: 15%; }
     .de .empresas-del .rappi {
       animation: rebote-izquierda 0.7s; }
     .de .empresas-del .pedidosya {
@@ -317,7 +318,7 @@ footer {
     padding: 20px; }
   .eq h1 {
     text-align: center; }
-  .eq h3, .eq p {
+  .eq h3, .eq p, .eq .co header h1, .co header .eq h1 {
     text-align: center;
     color: #000000; }
   .eq .container img {
@@ -338,7 +339,7 @@ footer {
     font-size: 30px; }
   h6 {
     font-size: 25px; }
-  p {
+  p, .co header h1 {
     font-size: 20px; }
   nav .navbar-brand {
     font-size: 1.75em;
@@ -365,7 +366,7 @@ footer {
   /*----------------------------------------- index -----------------------------------------*/
   .in header h1 {
     padding: 95px 0 0 0; }
-  .in header p {
+  .in header p, .in .co header h1, .co .in header h1 {
     margin: 0 30px;
     padding-bottom: 40px; }
   .in main h2 {
@@ -402,7 +403,7 @@ footer {
   .in main .promos .anuncio {
     background-color: #464646;
     text-align: center; }
-    .in main .promos .anuncio p {
+    .in main .promos .anuncio p, .in main .promos .anuncio .co header h1, .co header .in main .promos .anuncio h1 {
       font-size: 15px; }
     .in main .promos .anuncio img {
       width: 100%; }
@@ -415,7 +416,7 @@ footer {
     .me h1 {
       padding: 20px;
       margin: 20px; }
-    .me p {
+    .me p, .me .co header h1, .co header .me h1 {
       padding: 20px;
       margin: 20px; }
     .me table {
