@@ -24,7 +24,7 @@ h5 {
 h6 {
   font-size: 10px; }
 
-p, .co header h1 {
+p {
   font-size: 10px; }
 
 .sombreado-negro {
@@ -83,7 +83,8 @@ footer {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    text-align: center; }
 
 .legal {
   padding: 10px;
@@ -102,7 +103,7 @@ footer {
     padding-top: 50px;
     color: white;
     text-align: center; }
-  .in header p, .in .co header h1, .co .in header h1 {
+  .in header p {
     padding-bottom: 20px;
     color: white;
     text-align: center; }
@@ -193,6 +194,88 @@ footer {
   height: 200px;
   align-self: center; }
 
+.me2 .nav-menu {
+  grid-area: izquierda;
+  padding: 10px 5px 10px 10px;
+  background-image: linear-gradient(#757575, #6d6d6d);
+  text-align: left;
+  font-size: small;
+  position: sticky;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 95vh; }
+  .me2 .nav-menu a {
+    text-decoration: none;
+    color: black; }
+
+.me2 .menu-tittle {
+  background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+  text-align: right;
+  margin: 65px 0px 30px 0px;
+  padding: 20px 30px 20px 20px;
+  top: 50px; }
+
+.me2 .nav-menu-tittle {
+  font-weight: bold; }
+
+.me2 .menu {
+  grid-area: derecha; }
+
+.me2 .grilla {
+  display: grid;
+  grid-template-areas: "izquierda derecha";
+  grid-template-columns: 85px auto; }
+
+.me2 h3 {
+  text-align: center;
+  text-decoration: underline;
+  width: auto;
+  background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  margin: 0 10px; }
+
+.me2 .menu p {
+  margin: 0;
+  border: 1px;
+  border-style: solid;
+  background-color: white;
+  max-width: 100px; }
+
+.me2 .menu-item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border: 2px;
+  border-color: rgba(0, 0, 0, 0.75);
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75); }
+
+.me2 .seccion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 5px 10px 5px; }
+
+.me2 img {
+  height: 100px;
+  width: 100px; }
+
+.me2 .me2 {
+  margin: 20px; }
+
+.me2 .pre-footer {
+  padding: 20px;
+  margin: 50px 25px 25px 25px;
+  background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
+  text-align: center; }
+
 .me {
   margin: 60px 10px 30px; }
   .me h1 {
@@ -200,7 +283,7 @@ footer {
     margin: 10px;
     background-color: white;
     text-align: center; }
-  .me p, .me .co header h1, .co header .me h1 {
+  .me p {
     padding: 10px;
     margin: 15px;
     text-align: center;
@@ -228,10 +311,12 @@ footer {
 .co header {
   background-image: linear-gradient(#464646, #000000);
   padding: 20px; }
-  .co header p, .co header h1 {
+  .co header p {
     text-align: center;
     color: #ffffff; }
   .co header h1 {
+    text-align: center;
+    color: #ffffff;
     padding-top: 50px; }
 
 .co main {
@@ -248,7 +333,7 @@ footer {
   .co main .izq {
     background-image: linear-gradient(#464646, #2d2d2d);
     display: grid; }
-    .co main .izq p, .co main .izq header h1, .co header main .izq h1 {
+    .co main .izq p {
       color: white;
       text-align: center; }
     .co main .izq .nombre {
@@ -318,12 +403,15 @@ footer {
     padding: 20px; }
   .eq h1 {
     text-align: center; }
-  .eq h3, .eq p, .eq .co header h1, .co header .eq h1 {
+  .eq h3, .eq p {
     text-align: center;
     color: #000000; }
   .eq .container img {
     justify-content: center;
     width: 250px; }
+  .eq .text-conocer {
+    text-align: center;
+    margin-bottom: 20px; }
 
 /* escritorio */
 @media screen and (min-width: 768px) {
@@ -339,7 +427,7 @@ footer {
     font-size: 30px; }
   h6 {
     font-size: 25px; }
-  p, .co header h1 {
+  p {
     font-size: 20px; }
   nav .navbar-brand {
     font-size: 1.75em;
@@ -366,7 +454,7 @@ footer {
   /*----------------------------------------- index -----------------------------------------*/
   .in header h1 {
     padding: 95px 0 0 0; }
-  .in header p, .in .co header h1, .co .in header h1 {
+  .in header p {
     margin: 0 30px;
     padding-bottom: 40px; }
   .in main h2 {
@@ -403,7 +491,7 @@ footer {
   .in main .promos .anuncio {
     background-color: #464646;
     text-align: center; }
-    .in main .promos .anuncio p, .in main .promos .anuncio .co header h1, .co header .in main .promos .anuncio h1 {
+    .in main .promos .anuncio p {
       font-size: 15px; }
     .in main .promos .anuncio img {
       width: 100%; }
@@ -416,7 +504,7 @@ footer {
     .me h1 {
       padding: 20px;
       margin: 20px; }
-    .me p, .me .co header h1, .co header .me h1 {
+    .me p {
       padding: 20px;
       margin: 20px; }
     .me table {
@@ -425,6 +513,26 @@ footer {
         height: 80px;
         top: 50px;
         font-size: 20px; }
+  /*----------------------------------------- menu2 -----------------------------------------*/
+  .me2 .menu p {
+    max-width: 200px; }
+  .me2 img {
+    height: 200px;
+    width: 200px; }
+  .me2 h3 {
+    margin: 0 100px; }
+  .me2 .seccion {
+    margin: 0 20px 40px 20px; }
+  .me2 .menu-item {
+    margin: 20px; }
+  .me2 .nav-menu {
+    padding: 20px 10px 20px 20px;
+    top: 50px; }
+  .me2 .grilla {
+    grid-template-columns: 190px auto; }
+  .me2 .pre-footer {
+    padding: 20px;
+    margin: 100px 50px 50px 50px; }
   /*----------------------------------------- delivery -----------------------------------------*/
   .de {
     margin: 100px 50px 100px; }
@@ -463,7 +571,12 @@ footer {
   .in main .img-novedades {
     width: 300px;
     height: 300px;
-    margin-left: 60px; } }
+    margin-left: 60px; }
+  .me2 .menu p {
+    max-width: 250px; }
+  .me2 img {
+    height: 250px;
+    width: 250px; } }
 
 /* aca desapareci todo contenido excesivo para movil/tablet, dejando esa informacion solamente para dispositivos mas grandes. */
 @media screen and (max-width: 767px) {

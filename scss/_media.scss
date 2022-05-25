@@ -7,8 +7,8 @@
         font-size: 55px - $i*5;
     }
 }
-    p{font-size: 20px;}
-
+p{
+    font-size: 20px;}
 
     nav{
     
@@ -144,6 +144,43 @@ footer{
         }
     }
 }
+/*----------------------------------------- menu2 -----------------------------------------*/
+.me2{
+    .menu p{
+        max-width: 200px;
+    }
+
+    img{
+        height: 200px;
+        width: 200px;
+    }
+
+    h3{
+        margin: 0 100px;
+    }
+
+    .seccion{
+        margin: 0 20px 40px 20px;
+    }
+
+    .menu-item{
+        margin: 20px;
+    }
+
+    .nav-menu{
+        padding: 20px 10px 20px 20px;
+        top: 50px;
+    }
+
+    .grilla{
+        grid-template-columns: 190px auto;
+    }
+
+    .pre-footer{
+        padding: 20px;
+        margin: 100px 50px 50px 50px;
+    }
+}
 
 
 /*----------------------------------------- delivery -----------------------------------------*/
@@ -190,7 +227,8 @@ footer{
             } 
         }
     }
-} 
+}
+
 
 
 
@@ -204,6 +242,15 @@ footer{
          width: 300px;
          height: 300px;   
          margin-left: 60px;}
+
+ .me2 {.menu p{
+        max-width: 250px;
+            }
+
+        img{
+        height: 250px;
+        width: 250px;
+}}
 }
 
 /* aca desapareci todo contenido excesivo para movil/tablet, dejando esa informacion solamente para dispositivos mas grandes. */
