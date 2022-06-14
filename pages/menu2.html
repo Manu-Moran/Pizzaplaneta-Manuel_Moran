@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PizzaPlaneta | Menu</title>
 
-    <!-- Meta keywords -->
-<meta name="keywords" content="Pizzaplaneta, comida, rapida, fastfood, comer, menu, carta">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
 
-<!-- Meta description -->
-<meta name="description" content="Bienvenido a PizzaPlaneta, donde encontraras sabores de todo el universo. Conoce nuestro menu/carta">
+    <!-- Meta keywords, description y el favicon -->
+    <meta name="keywords" content="Pizzaplaneta, comida, rapida, fastfood, comer, menu, carta">
 
-<!-- Favicon -->
-<link rel="icon" href="../images/favicon.png">
+    <meta name="description" content="Bienvenido a PizzaPlaneta, donde encontraras sabores de todo el universo. Conoce nuestro menu/carta">
+
+    <link rel="icon" href="../images/favicon.png">
+
 
     <!---------reset--------->
     <link rel="stylesheet" href="../reset.css">
@@ -24,12 +27,16 @@
     <!-- esta es para los logos --> 
     <script src="https://kit.fontawesome.com/89a8faeaea.js" crossorigin="anonymous"></script>
 
+    <!-- Link para animaciones de scroll (JS me da ansiedad) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Link para mi css -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light min-vw-100 position-fixed" style="top: 0px">
         <div class="container-fluid">
-            <!-- menu hamburgesa para < tablets -->
+          <a href="../index.html"><img class="logo-nav" src="../images/favicon.png" alt="Logo PizzaPlaneta"></a>
           <a class="navbar-brand" href="menu2.html">Menu</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,6 +56,7 @@
                 <a class="nav-link active" aria-current="page" href="equipo.html">equipo</a>
               </li>
             </ul>
+           
           </div>
         </div> 
       </nav>
@@ -57,8 +65,8 @@
 <div class="me2">
 
     <div class="menu-tittle">
-        <h1>Bienvenido al menu de pizza planeta</h1>
-        <p>Aqui podes encontrar lo que quieras con img (y quizas descripciones desp), si en cambio deseas ver la carta puedes venir <a href="menu.html">aqui</a>. </p>
+        <h1 class="sombreado-gris">Bienvenido al menu de pizza planeta</h1>
+        <p class="sombreado-gris">Aqui podes encontrar lo que quieras con img (y quizas descripciones desp), si en cambio deseas ver la carta puedes venir <a href="menu.html">aqui</a>. </p>
     </div>
 
 
@@ -76,7 +84,8 @@
     </div>
         
     <div class="menu">
-        
+
+    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-quart">
         <h3 id="menu-tittle-pizzas">PIZZAS</h3>
         <div class="seccion">
             <div class="menu-item">
@@ -109,7 +118,9 @@
                 <p>Tapa-Arterias</p>
             </div>
         </div>
+    </div>
         
+    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-quart">
         <h3 id="menu-tittle-hamburguesas">HAMBURGUESAS</h3>
         <div class="seccion">
             <div class="menu-item">
@@ -132,7 +143,9 @@
                 <p>Extra bacon</p>
             </div>
         </div>
+    </div>
         
+    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-quart">
         <h3 id="menu-tittle-aperitivos">APERITIVOS</h3>
         <div class="seccion">
             <div class="menu-item">
@@ -150,7 +163,9 @@
                 <p>Bastones de queso</p>
             </div>
         </div>
-        
+    </div>
+
+    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-quart">
         <h3 id="menu-tittle-bebidas">BEBIDAS</h3>
         <div class="seccion">
             <div class="menu-item">
@@ -178,7 +193,9 @@
                 <p>Cerveza</p>
             </div>
         </div>
-        
+    </div>
+
+    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-quart">
         <h3 id="menu-tittle-postres">POSTRES</h3>
         <div class="seccion">
             <div class="menu-item">
@@ -196,7 +213,9 @@
                 <p>Helado Oreo</p>
             </div>
         </div>
-        
+    </div>
+
+    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-quart">
         <h3 id="menu-tittle-merienda">MERIENDA</h3>
         <div class="seccion">
             <div class="menu-item">
@@ -234,8 +253,11 @@
                 <p>Licuado</h5>
             </div>
         </div> 
-        </div>
-        </div>
+    </div>
+
+
+    </div>
+</div>
 
 <div class="pre-footer">
     <h5>Si quieres consultar descripcion, precio y el codigo numerico para hacer tu pedido haz click</h5>
@@ -253,7 +275,7 @@
             <h5>Descargate nuestra app</h5>
             <h6>y no te pierdas nuestras novedades</h6>
             </div>
-            <button>Descargar ahora</button>
+            <button>Descarga ahora</button>
         </div>
 
         <div class="redes">
@@ -286,7 +308,17 @@
 
 
 
-<!-- para el js y css del bootstrap -->
+<!-- bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- link para animaciones de AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 500,
+    });
+</script>
+
+
 </body>
 </html>

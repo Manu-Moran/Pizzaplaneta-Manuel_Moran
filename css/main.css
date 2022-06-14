@@ -2,9 +2,17 @@
 nav {
   background-color: red;
   position: fixed;
-  z-index: 1; }
+  z-index: 10000; }
   nav li {
     cursor: pointer; }
+  nav img {
+    height: 40px;
+    width: 40px;
+    margin-right: 16px; }
+  nav .navbar-nav .nav-link {
+    text-align: center; }
+  nav .navbar-brand {
+    margin: 0; }
 
 h1 {
   font-size: 30px; }
@@ -62,7 +70,8 @@ footer {
     footer .app-spam button {
       width: 50px;
       height: 25px;
-      font-size: 7px; }
+      font-size: 7px;
+      border-radius: 5%; }
     footer .app-spam img {
       width: 50px;
       height: 50px; }
@@ -100,7 +109,8 @@ footer {
   background-size: cover;
   box-shadow: 0px 2px 25px 25px black; }
   .in header h1 {
-    padding-top: 50px;
+    font-family: 'Goblin One', cursive;
+    padding-top: 55px;
     color: white;
     text-align: center; }
   .in header p {
@@ -194,12 +204,34 @@ footer {
   height: 200px;
   align-self: center; }
 
+.me2 .menu-tittle {
+  background-image: url(../images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  margin: 50px 0px 30px 0px;
+  padding: 10px 10px 0px 15px;
+  box-shadow: 0px 2px 25px 25px black; }
+  .me2 .menu-tittle h1 {
+    font-family: 'Goblin One', cursive;
+    color: white;
+    text-align: right;
+    font-size: 22px; }
+  .me2 .menu-tittle p {
+    color: white;
+    text-align: right; }
+  .me2 .menu-tittle a {
+    color: white; }
+
 .me2 .nav-menu {
   grid-area: izquierda;
   padding: 10px 5px 10px 10px;
   background-image: linear-gradient(#757575, #6d6d6d);
   text-align: left;
   font-size: small;
+  border: black 2px;
+  border-style: solid;
+  box-shadow: 0px 2px 10px 10px rgba(0, 0, 0, 0.39);
   position: sticky;
   top: 50px;
   display: flex;
@@ -209,14 +241,6 @@ footer {
   .me2 .nav-menu a {
     text-decoration: none;
     color: black; }
-
-.me2 .menu-tittle {
-  background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
-  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
-  text-align: right;
-  margin: 65px 0px 30px 0px;
-  padding: 20px 30px 20px 20px;
-  top: 50px; }
 
 .me2 .nav-menu-tittle {
   font-weight: bold; }
@@ -231,7 +255,6 @@ footer {
 
 .me2 h3 {
   text-align: center;
-  text-decoration: underline;
   width: auto;
   background: linear-gradient(to bottom right, #ffffff, #c7c7c7);
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
@@ -252,9 +275,10 @@ footer {
   padding: 5px;
   text-align: center;
   border: 2px;
+  border-radius: 5%;
   border-color: rgba(0, 0, 0, 0.75);
   border-style: solid;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: #c1c1c1;
   box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.75); }
 
 .me2 .seccion {
@@ -265,7 +289,9 @@ footer {
 
 .me2 img {
   height: 100px;
-  width: 100px; }
+  width: 100px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%; }
 
 .me2 .me2 {
   margin: 20px; }
@@ -332,7 +358,8 @@ footer {
     box-shadow: 0 0 20px 0 white; }
   .co main .izq {
     background-image: linear-gradient(#464646, #2d2d2d);
-    display: grid; }
+    display: grid;
+    padding: 20px; }
     .co main .izq p {
       color: white;
       text-align: center; }
@@ -349,7 +376,7 @@ footer {
       padding: 0; }
     .co main .izq .enviar {
       text-align: center;
-      padding: 1em;
+      padding: 0.5em;
       background-color: red; }
 
 .co form input, .co textarea {
@@ -478,7 +505,8 @@ footer {
     width: 600px;
     height: 450px; }
   .in main .encontrarnos {
-    flex-direction: row; }
+    flex-direction: row;
+    margin: 50px 0 25px 0; }
   .in main .texto-ubicaciones {
     margin: 50px; }
   .in main .extra-promo {
@@ -514,17 +542,24 @@ footer {
         top: 50px;
         font-size: 20px; }
   /*----------------------------------------- menu2 -----------------------------------------*/
+  .me2 .menu-tittle {
+    margin: 80px 0px 60px 0px;
+    padding: 0px 20px; }
+    .me2 .menu-tittle h1 {
+      font-size: 50px;
+      margin: 10px; }
   .me2 .menu p {
-    max-width: 200px; }
+    max-width: 175px; }
   .me2 img {
-    height: 200px;
-    width: 200px; }
+    height: 175px;
+    width: 175px; }
   .me2 h3 {
     margin: 0 100px; }
   .me2 .seccion {
     margin: 0 20px 40px 20px; }
   .me2 .menu-item {
-    margin: 20px; }
+    margin: 20px;
+    padding: 10px; }
   .me2 .nav-menu {
     padding: 20px 10px 20px 20px;
     top: 50px; }
@@ -559,6 +594,8 @@ footer {
         width: 60px; }
       .co main .formulario textarea {
         padding: 2em; }
+      .co main .formulario .enviar {
+        padding: 1em; }
     .co main .more-inf li, .co main .more-inf ul {
       list-style: none;
       font-size: 15px; } }
@@ -573,10 +610,24 @@ footer {
     height: 300px;
     margin-left: 60px; }
   .me2 .menu p {
-    max-width: 250px; }
+    max-width: 200px; }
   .me2 img {
-    height: 250px;
-    width: 250px; } }
+    height: 200px;
+    width: 200px; }
+  nav img {
+    height: 50px;
+    width: 50px;
+    margin: 0; }
+  nav .navbar-brand {
+    padding-left: 20px;
+    margin-right: 16px; } }
+
+@media screen and (min-width: 2000px) {
+  .me2 .menu p {
+    max-width: 300px; }
+  .me2 img {
+    height: 300px;
+    width: 300px; } }
 
 /* aca desapareci todo contenido excesivo para movil/tablet, dejando esa informacion solamente para dispositivos mas grandes. */
 @media screen and (max-width: 767px) {

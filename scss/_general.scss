@@ -2,10 +2,23 @@
 nav{
     background-color: red;
     position: fixed;
-    z-index: 1;
+    z-index: 10000;
 
     li
     {cursor: pointer;;}
+
+    img{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px
+    };
+    .navbar-nav .nav-link{
+        text-align: center;
+    }
+
+    .navbar-brand{
+        margin: 0;
+    }
 }
 
 h1{font-size: 30px;}

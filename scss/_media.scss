@@ -14,7 +14,8 @@ p{
     
     .navbar-brand{
         font-size: 1.75em;
-        font-weight: 500 ;}
+        font-weight: 500 ;
+        }
     
     .nav-item{font-size: 1.25em ;}
 }
@@ -84,7 +85,9 @@ footer{
         iframe{
             width: 600px;
             height: 450px}
-        .encontrarnos{flex-direction: row;} 
+        .encontrarnos{
+            flex-direction: row;
+            margin: 50px 0 25px 0;} 
         .texto-ubicaciones{
             margin: 50px;
         } 
@@ -146,13 +149,20 @@ footer{
 }
 /*----------------------------------------- menu2 -----------------------------------------*/
 .me2{
+    .menu-tittle{
+        margin: 80px 0px 60px 0px;
+    padding: 0px 20px;
+    h1{  
+        font-size: 50px;
+        margin: 10px;
+        }}
     .menu p{
-        max-width: 200px;
+        max-width: 175px;
     }
 
     img{
-        height: 200px;
-        width: 200px;
+        height: 175px;
+        width: 175px;
     }
 
     h3{
@@ -165,6 +175,7 @@ footer{
 
     .menu-item{
         margin: 20px;
+        padding: 10px;
     }
 
     .nav-menu{
@@ -215,9 +226,14 @@ footer{
             grid-template-columns: 50% 50%;
             grid-gap: 20px;
 
-            .dia,.mes{width: 40px;}
-            .year{width: 60px;}
-            textarea{padding: 2em;}
+            .dia,.mes{width: 40px;
+                }
+            .year{width: 60px;
+                }
+            textarea{padding: 2em;
+                }
+            .enviar{ padding: 1em;
+                }
                 
             }
         .more-inf{
@@ -244,13 +260,36 @@ footer{
          margin-left: 60px;}
 
  .me2 {.menu p{
-        max-width: 250px;
+        max-width: 200px;
             }
 
         img{
-        height: 250px;
-        width: 250px;
+        height: 200px;
+        width: 200px;
 }}
+nav{
+img{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+ .navbar-brand{
+    padding-left: 20px;
+    margin-right: 16px;
+    }
+}
+}
+
+@media screen and (min-width: 2000px)
+{.me2 {.menu p{
+    max-width: 300px;
+        }
+
+    img{
+    height: 300px;
+    width: 300px;
+    }
+}
 }
 
 /* aca desapareci todo contenido excesivo para movil/tablet, dejando esa informacion solamente para dispositivos mas grandes. */
